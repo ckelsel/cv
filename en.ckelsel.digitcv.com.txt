@@ -1,23 +1,69 @@
+[password]
+# Contact Information 
 
-### File transfer Module of STREAMER remote display protocol
+- Phone:18500039053
+- Email:ckelsel@hotmail.com
+
+---
+
+# Personal Information
+
+ - KunMing Xie/Man/1988
+ - Bachelor/Fujian Agriculture and Forestry University /electronical and information engineering
+
+ - Work Experience£ºfour years
+ - Technology blog£ºhttp://blog.chinaunix.net/uid/24709751/abstract/1.html
+
+ - Desired position£ºSoftware Engineer
+ - Desired city£ºBeiJing, China
+
+---
+
+# Work Experience
+
+## Beijing CLDMIND Technology Co., Ltd £¨12/2013 to Current £©
+
+### File transfer Module of STREAMER remote display protocol 
 I am responsible for design and development the project which contains file transfer client module, server module and Android phone UI. Support phone displays computer directory, upload and download files.  The most difficult problem in this project is how to transfer data efficiently and effectively. I use file segmentation technology, combined with flow control mechanism by Sliding-window and check results by MD5. Through these technologies, the transmission time is reduced by more than 2 times 
 
 
 
-### Software automatic update program 
+### Software automatic update program
 I am responsible for design and development the project to achieve different Windows software upgrade, including applications, services, drivers.  The most difficult problem in this project is ensure a successful upgrade.  I first back up the original installation files, and then use the RSA signature to verify the upgrade package, MD5 check upgrade package files, replace the target file, and finally use the MD5 to verify the target file.  If the upgrade fails, start rollback operation.  For this project, I am most proud of the technology is XML, Use XML to define the software installation file list.  Do not use this technique only upgrade specific program. Using this technique you can upgrade different software, The only condition is provide a list of software installation files.
 
-
-
-## automatically logon module of remote display protocol server side
+### automatically logon module of remote display protocol server side
 I am responsible for design and development the project contains a Windows 7 Login Module and a Winddows Service, Using a user name and password to log into the Windows system.  The most difficult problem in this project is ensure that the user login is successful.  I create a login session, check the user name and password, transfer credentials via shared memory so that login module to complete the login.  Session management mechanism to allow the same user login session preemption, forbidden different user login, support for exception monitoring and recovery.  If the login module does not work, then restart the explorer.exe process to reload.  For this project, I am most proud of the technology is Flash Login so that a user see the desktop as quickly as possible Normally it takes 2-5s, using this technique requires only 1s.
+
 
 
 ### Windows Display Driver
 Maintained miniport driver of XPDM, support to get the client resolution, support custom resolution.
 Research Windows Display Driver Model(WDDM) and 3D.
 
+	
+
+ 
+## Centerm Information Co., Ltd. £¨06/2012 to 12/2013£©
+
 ### Xred remote display protocol Linux client
 I am responsible for adapt client from x86 platform to arm platform, implement raster operations by using XLIB.  The most difficult problem in this project is ensure user operative smootyly.  To make user happy, I merge the mouse position and multiple refresh area, also maintain a refresh rate of 30-40ms and use hardware acceleration.  For this project, the most proud of is reduce the bandwidth of server side, by optimizing server drive cache mechanism and the transmission frequency.  Drivers cache all bitmaps, while full-screen bitmaps is useless that cost a lot of bandwidth.  On the other hand, The faster the transmission frequency, the lower the cache hit rate. Reduce the transmission frequency, improve cache hit rate. After optimization, bandwidth is reduced by 20-30%.
 
-        
+# Skills
+
+- C/C++ 
+- Win32 API
+- Windows
+- Visual Studio and Vim
+- Performance and scalability optimization
+- RDP Spice 
+- Linux
+- knowledge of Security
+- Multi-threading/IPC programming
+- Troubleshooting and debugging
+
+
+---
+
+# Thanks
+Thank you for taking the time to read my resume and look forward to the opportunity to work with you.
+
