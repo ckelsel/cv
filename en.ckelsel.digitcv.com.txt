@@ -6,22 +6,31 @@
 
 ---
 
-# Personal Information
-
- - KunMing Xie/Man/1988
- - Bachelor/Fujian Agriculture and Forestry University /electronical and information engineering
-
- - Work Experience£ºfour years
- - Technology blog£ºhttp://blog.chinaunix.net/uid/24709751/abstract/1.html
-
- - Desired position£ºSoftware Engineer
- - Desired city£ºBeiJing, China
+# Summary
+- Highly-skilled software development professional bringing more than 4 years in remote display protocol design, development and optimization. 
+- Works well under pressure and consistently meets deadlines and targets while delivering high quality work.
 
 ---
 
-# Work Experience
+# Skills
 
-## Beijing CLDMIND Technology Co., Ltd £¨12/2013 to Current £©
+- C/C++ 
+- Win32 API
+- Windows
+- Visual Studio and Vim
+- Performance and scalability optimization
+- RDP Spice 
+- Linux
+- knowledge of Security
+- Multi-threading/IPC programming
+- Troubleshooting and debugging
+
+---
+
+# Work Experience, Four Years
+## Software Engineer, 12/2013 to Current
+
+## Cldmind Technology (Beijing) Co., Ltd - Beijing, China
 
 ### File transfer Module of STREAMER remote display protocol 
 I am responsible for design and development the project which contains file transfer client module, server module and Android phone UI. Support phone displays computer directory, upload and download files.  The most difficult problem in this project is how to transfer data efficiently and effectively. I use file segmentation technology, combined with flow control mechanism by Sliding-window and check results by MD5. Through these technologies, the transmission time is reduced by more than 2 times 
@@ -42,25 +51,17 @@ Research Windows Display Driver Model(WDDM) and 3D.
 
 	
 
- 
-## Centerm Information Co., Ltd. £¨06/2012 to 12/2013£©
+## Software Engineer, 06/2012 to 12/2013
+## Centerm Information Co., Ltd.- Fuzhou, China
 
 ### Xred remote display protocol Linux client
 I am responsible for adapt client from x86 platform to arm platform, implement raster operations by using XLIB.  The most difficult problem in this project is ensure user operative smootyly.  To make user happy, I merge the mouse position and multiple refresh area, also maintain a refresh rate of 30-40ms and use hardware acceleration.  For this project, the most proud of is reduce the bandwidth of server side, by optimizing server drive cache mechanism and the transmission frequency.  Drivers cache all bitmaps, while full-screen bitmaps is useless that cost a lot of bandwidth.  On the other hand, The faster the transmission frequency, the lower the cache hit rate. Reduce the transmission frequency, improve cache hit rate. After optimization, bandwidth is reduced by 20-30%.
 
-# Skills
+---
 
-- C/C++ 
-- Win32 API
-- Windows
-- Visual Studio and Vim
-- Performance and scalability optimization
-- RDP Spice 
-- Linux
-- knowledge of Security
-- Multi-threading/IPC programming
-- Troubleshooting and debugging
-
+#Education
+- Bachelor of Science: Electronical and Information Engineering, 2012
+- Fujian Agriculture and Forestry University - Fuzhou, China
 
 ---
 
