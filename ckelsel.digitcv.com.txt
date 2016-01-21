@@ -24,88 +24,25 @@
 ### STREAMER远程桌面协议的文件传输模块 
 我在此项目负责设计并开发文件传输的客户端模块、服务端模块和安卓手机的UI，实现手机浏览电脑的目录，支持上传和下载文件。这个项目中，最困难的问题是如何高效正确地传输数据，我采取文件分割技术，结合Sliding-window的流控机制，使用MD5校验结果。采用这些技术，传输时间缩短2倍以上。
 
-### File transfer Module of STREAMER remote display protocol
-I am responsible for design and development the project contains file 
-transfer client module, server module and Android phone UI. Support phone 
-displays computer directory, upload and download files.
-The most difficult problem in this project is How to transfer data 
-efficiently and effectively.
-i Use file segmentation technology,
-Combined with flow control mechanism by Sliding-window and 
-Check results by MD5.
-Through these technologies, the transmission time is reduced by more than 2 times 
-
-
 
 ### 软件自动更新程序 
 我在此项目负责升级程序的设计、开发和测试，实现不同的Windows软件升级，包括应用、服务、驱动。这个项目中，最困难的问题保证升级成功，我首先备份原始的安装文件，接着使用RSA签名来校验升级包，MD5校验升级包内的文件，替换目标文件，最后使用MD5校验目标文件。如果升级失败，则回滚。这个项目中，我最自豪的技术是XML，使用XML定义软件安装文件列表。
 不使用该技术只能升级特定的程序。使用该技术可以升级不同的软件，唯一的条件是提供软件安装文件的列表
 
-### Software automatic update program 
-I am responsible for design and development the project to achieve different
-Windows software upgrade, 
-including applications, services, drivers.
-The most difficult problem in this project is ensure a successful upgrade.
-I first back up the original installation files, and then use the RSA signature to verify the upgrade package, MD5 check upgrade package files, replace the target file, and finally use the MD5 to verify the target file. 
-If the upgrade fails, start rollback operation.
-For this project, I am most proud of the technology is XML,
-Use XML to define the software installation file list.
-Do not use this technique only upgrade specific program. Using this technique you can upgrade different software, 
-   The only condition is provide a list of software installation files.
-
-
-        
 
 ### STREAMER远程桌面协议服务端自动登录模块 
-我在此项目负责设计并开发Windows
-7的登录模块和服务程序，通过用户名密码登录Windows桌面。这个项目中，最困难的问题是保证用户登录成功。我为每个用户创建登录会话，校验用户名密码，通过共享内存传递登录凭据给登录模块完成登录。登录会话管理机制允许相同用户抢占，控制禁止不同用户登录，支持异常监控与恢复。如果登录模块未正常工作，则重启explorer.exe进程重新加载。这个项目中，我最自豪的技术是秒登录，让用户尽可能快地看到桌面。正常情况下要2-5s，使用该技术后只需要1s。
-
-## automatically logon module of remote display protocol server side
-I am responsible for design and development the project contains a Windows 7
-Login Module and a Winddows Service, Using a user name and password to log
-into the Windows system. 
-The most difficult problem in this project is ensure that the user login is
-successful. 
-I create a login session, check the user name and password, transfer
-credentials via shared memory so that login module to complete the login.
-Session management mechanism to allow the same user login session preemption, forbidden different user login, support for exception monitoring and recovery.
-If the login module does not work, then restart the explorer.exe process to
-reload.
-For this project, I am most proud of the technology is Flash Login so that a user see the desktop as quickly as possible
-Normally it takes 2-5s, using this technique requires only 1s.
-
-
+我在此项目负责设计并开发Windows 7的登录模块和服务程序，通过用户名密码登录Windows桌面。这个项目中，最困难的问题是保证用户登录成功。我为每个用户创建登录会话，校验用户名密码，通过共享内存传递登录凭据给登录模块完成登录。登录会话管理机制允许相同用户抢占，控制禁止不同用户登录，支持异常监控与恢复。如果登录模块未正常工作，则重启explorer.exe进程重新加载。这个项目中，我最自豪的技术是秒登录，让用户尽可能快地看到桌面。正常情况下要2-5s，使用该技术后只需要1s。
 
 
 ### Windows 显示驱动开发
 维护XPDM miniport驱动，支持获取客户端分辨率，支持自定义分辨率。预研WDDM显示驱动及3D显示。
 
-### Windows Display Driver
-
-Maintained miniport driver of XPDM, 
-support to get the client resolution, support custom resolution.
-Research Windows Display Driver Model(WDDM) and 3D.
 
  
 ## 福建升腾资讯有限公司（ 2012年6月 ~ 2013年12月 ）
 
 ### 基于ARM平台开发Xred远程桌面协议Linux客户端
 我在此项目负责协议客户端从x86平台移植到ARM平台，使用XLIB实现二元、三元光栅操作，实现远程桌面协议客户端。这个项目中，最困难的问题保证桌面操作流畅，我采取了合并鼠标操作降低带宽，合并多次刷新，刷新频率30-40ms一帧，使用硬件加速绘制画面，达到用户操作流畅。这个项目中，我最自豪的是降低服务端带宽，优化服务端驱动cache机制和发送频率。驱动cache机制默认cache所有位图，但是全屏位图cache命中低，浪费带宽。另一方面，发送频率越快cache命中率越低，降低发送频率，提高cache命中率。优化后，数据量降低20-30%，从本质上降低带宽。
-
-### Xred remote display protocol Linux client
-I am responsible for adapt client from x86 platform to arm platform and
-implement Raster Operations by using XLIB. 
-The most difficult problem in this project is ensure smooth operation.
-To make user happy, I merge the mouse position and multiple refresh area, also maintain a refresh rate of 30-40ms and use hardware acceleration.
-
-For this project, the most proud of is reduce the bandwidth of server side,
-by optimizing server drive cache mechanism and the transmission frequency.
-Driver caches all bitmaps, while full-screen bitmaps is useless that cost a
-lot of bandwidth. 
-On the other hand, The faster the transmission frequency, the lower the cache
-hit rate.Reduce the transmission frequency, improve cache hit rate. After
-optimization, bandwidth is reduced by 20-30%.
-
 
 
 
